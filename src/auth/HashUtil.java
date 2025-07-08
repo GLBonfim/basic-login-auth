@@ -1,12 +1,14 @@
+package auth;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class HashUtil {
-
-    public static String gerarHash(String senha) {
+    /** Gera hash SHA-256 em hexadecimal */
+    public static String gerarHash(String senhaPura) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] hashBytes = md.digest(senha.getBytes());
+            byte[] hashBytes = md.digest(senhaPura.getBytes());
 
             StringBuilder sb = new StringBuilder();
             for (byte b : hashBytes) {

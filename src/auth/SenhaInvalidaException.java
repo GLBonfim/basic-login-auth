@@ -1,3 +1,5 @@
+package auth;
+
 public class SenhaInvalidaException extends RuntimeException {
     private String mensagem;
 

@@ -1,3 +1,5 @@
+package auth;
+
 public class Credencial {
     private final String usuario;
     private final String senhaHash;

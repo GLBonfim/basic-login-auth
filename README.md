@@ -33,12 +33,12 @@ Projeto simples de autenticação com cadastro e login em memória, utilizando b
 ```
 src/
 └── app/
-    └── Main.java              # Ponto de entrada (cadastro + login)
+    └── Main.java                       # Ponto de entrada (cadastro + login)
 └── auth/
-    └── AuthService.java       # Regras de autenticação e registro
-    └── Credencial.java        # Representa o usuário e senha (com hash)
-    └── HashUtil.java          # Geração do hash SHA-256
-    └── SenhaInvalidaException.java # Exceção personalizada para senha fraca
+    └── AuthService.java                # Regras de autenticação e registro
+    └── Credencial.java                 # Representa o usuário e senha (com hash)
+    └── HashUtil.java                   # Geração do hash SHA-256
+    └── SenhaInvalidaException.java     # Exceção personalizada para senha fraca
 ```
 
 ## 📝 Exemplo de Uso

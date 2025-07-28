@@ -21,4 +21,7 @@ public class AuthService {
                 .findFirst();
         return encontrado.isPresent() && encontrado.get().validarSenha(senhaDigitada);
     }
+    public List<Credencial> getUsuarios() {
+        return banco;
+    }
 }
